@@ -14,6 +14,46 @@
             <h1 class="blanco">Consultoría Tecnológica</h1>
             <h2 class="blanco">Tu socio de diseño web</h2>
         </section>
+        <section class="contacto">
+          <img class="imagencontacto" src="./imagenes/Imagen Contacto.png" alt="dos personas dándose la mano">
+          <div class="form">
+            <h1>Te ayudamos</h1>
+            <ul>
+              <li>Tel: +34 655 895 611</li>
+              <li><a>Email: info@gotech.com</a></li>
+            </ul>
+            <h1>Déjanos tu consulta:</h1>
+          <!--elemento contenedor específico para contener formularios-->
+            <form action="/my-handling-form-page" method="post" class="form">
+              <ul>
+                <li>
+                  <label for="name">Nombre:</label>
+                  <input type="text" id="name" name="user_name" />
+                </li>
+                <li>
+                  <label for="mail">Email:</label>
+                  <input type="email" id="mail" name="user_mail" />
+                </li>
+                <li>
+                  <label for="tel">Teléfono:</label>
+                  <input type="tel" id="tel" name="user_tel" />
+                </li>
+                <li>
+                  <label for="msg">Mensaje:</label>
+                  <textarea id="msg" name="user_message">Necesito ayuda para</textarea>
+                </li>
+              </ul>
+              <br>
+          <!--El elemento button permite generar botones creativos más complejos-->  
+                <li class="button">
+                  <button type="submit">Enviar</button>
+                </li>
+            </form>
+          </div>
+          </section>
     </main>
 </body>
+
 </html>
+    
+    
