@@ -1,0 +1,14 @@
+.fondo {
+    width: min(100vw,1440px);
+    height: auto;
+    position: absolute;
+    z-index: -1;
+}
+
+.principal h1 {
+    text-align: center;
+}
+
+.blanco {
+    color: #ffffff;
+}
