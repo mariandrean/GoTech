@@ -1,15 +1,34 @@
 html {
     font-family: 'Jost', sans-serif;
+    margin: 0;
+}
+body, main {
+    margin: 0;
+}
 
-}.fondo {
-    width: min(100vw,1440px);
-    height: auto;
+.fondo {
+    width: max(0px, 100vw);
+    height: 57vw;
     position: absolute;
     z-index: -1;
+    object-fit: cover;
+    object-position: top center;
+}
+.principal {
+
 }
 
 .principal h1 {
     text-align: center;
+    font-size: 7vw;
+    padding-top: 3.5vw;
+    font-weight: 700;
+}
+.principal h2 {
+    font-size: 3vw;
+    font-weight: 400;
+    margin-top: 30vw;
+    margin-left: 5vw;
 }
 
 .blanco {
