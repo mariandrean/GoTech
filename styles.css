@@ -1,0 +1,52 @@
+.Nosotros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.Nosotros h1,
+.Nosotros h2,
+.Nosotros h3,
+.Nosotros p {
+    margin-bottom: 15px;
+}
+
+/* Media queries para pantallas más pequeñas */
+@media only screen and (max-width: 600px) {
+    .Nosotros {
+        padding: 10px;
+    }
+}
+
+span {
+    color: #ffca41;
+}
+
+.Developers {
+    display: flex;
+    justify-content: space-around; /* Espacio uniforme entre elementos */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan a la siguiente línea si no caben */
+    background-color: #14213d;
+}
+
+.Developers_GoTech {
+    text-align: center;
+    margin: 10px;
+    flex: 1; /* Hace que cada elemento tenga el mismo tamaño */
+    max-width: 300px; /* Limita el ancho máximo para evitar que se estiren demasiado */
+}
+
+.Developers_GoTech img {
+    width: 70%; /* Asegura que la imagen sea 100% del ancho del contenedor */
+    height: auto;
+}
+
+.Developers_GoTech p {
+    color: white;
+}
+
+.Developers_GoTech h3 {
+    color: #fca311;
+}
