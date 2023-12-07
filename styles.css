@@ -15,7 +15,7 @@ body {
     background-image: url(imagenes/fondo.jpg);
     width: min(100vw, 1440px);
     height: min(55vw, 750px);
-    background-position: centegitr 10%;
+    background-position: center 10%;
     background-size: cover;
 }
 
