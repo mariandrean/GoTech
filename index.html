@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,90 +6,30 @@
     <title>GoTech! Consultoria Tecnologica</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jost">
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Jost', sans-serif;
-        }
-
-        #Box3 {
-            position: relative;
-        }
-
-        .navbar {
-            overflow: hidden;
-            background-color: #333;
-            position: absolute;
-            top: 0;
-            right: 0;
-            width: 100%;
-            display: none;
-        }
-
-        .navbar a {
-            float: left;
-            display: block;
-            color: #f2f2f2;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
-
-        .navbar a:hover {
-            background-color: #ddd;
-            color: black;
-        }
-
-        #hamburger-menu {
-            cursor: pointer;
-            padding: 15px;
-            display: none;
-        }
-
-        #toggle {
-            display: none;
-        }
-
-        #toggle:checked + .navbar {
-            display: block;
-        }
-
-        @media screen and (max-width: 600px) {
-            .navbar a:not(:first-child) {
-                display: none;
-            }
-
-            #hamburger-menu {
-                display: block;
-            }
-
-            #toggle:checked + #Box3 #hamburger-menu:before {
-                content: '✕';
-            }
-
-            #toggle:checked + #Box3 #hamburger-menu + .navbar {
-                display: block;
-            }
-        }
-    </style>
 </head>
 <body>
-    <div id="gigya-container" style="display: none;"></div>
-    <div id="Box0"></div>
-    <div id="Box1"><img src="./Logo.png"></div>
-    <div id="Box2">
-        <a href="Nosotros">Nosotros</a>
-        <a href="Servicios">Servicios</a>
-        <a href="Contacta">Contacta</a>
-    </div>
-    <div id="Box3">
-        <input type="checkbox" id="toggle">
-        <label id="hamburger-menu" for="toggle">☰</label>
-        <div class="navbar">
+    <div class="encabezado">
+        <img class="logo" src="./imagenes/Logo.png" alt="Logo de GoTech! Consultoria Tecnologica">
+
+        <div class="menu">
             <a href="Nosotros">Nosotros</a>
             <a href="Servicios">Servicios</a>
             <a href="Contacta">Contacta</a>
         </div>
     </div>
+
+    <footer class="pie-de-pagina">
+        <p>© 2023 – GoTech! | Todos los derechos reservados | 
+            <a href="aviso-legal.pdf" target="_blank">Aviso Legal</a> | 
+            <a href="politica-privacidad.pdf" target="_blank">Política de Privacidad</a> | 
+            <a href="politica-cookies.pdf" target="_blank">Política de Cookies</a>
+        </p>
+
+        <p>Siguenos
+             <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.comuario" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/tu_usuario" target="_blank"><i class="fab fa-instagram"></i></a>
+        </p>
+    </footer>
 </body>
 </html>
