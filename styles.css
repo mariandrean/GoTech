@@ -237,3 +237,73 @@ h3 {
 .imagen-publicidad-online {
     max-width: 100%;
 }
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Jost', sans-serif; /* Aplica la fuente Jost al cuerpo del documento */
+}
+
+.encabezado {
+    background-color: #14213D;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo {
+    max-width: 100%;
+    height: auto;
+}
+
+.menu {
+    display: flex;
+    margin: auto; /* Centra el menú horizontalmente */
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 135px; /* Añade espaciado vertical y horizontal */
+    font-family: 'Jost', sans-serif; /* Aplica la fuente Jost al menú */
+    font-size: 24px; /* Ajusta el tamaño de la letra */
+}
+
+/* Estilos para pantallas pequeñas (móviles) */
+@media only screen and (max-width: 600px) {
+    .encabezado {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .menu {
+        margin-top: 10px;
+    }
+
+    .menu a {
+        margin: 5px;
+    }
+}
+
+footer {
+    margin: 0;
+    padding: 0;
+    font-family: 'Jost', sans-serif; /* Aplica la fuente Jost al cuerpo del documento */    
+}
+.pie-de-pagina {
+    background-color: #5a72a7;
+    color: #fff;
+    text-align: left;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pie-de-pagina a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
