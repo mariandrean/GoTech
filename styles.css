@@ -272,7 +272,7 @@ footer {
     font-family: 'Jost', sans-serif; /* Aplica la fuente Jost al cuerpo del documento */    
 }
 .pie-de-pagina {
-    background-color: #5a72a7;
+    background-color: #14213D;
     color: #fff;
     text-align: left;
     padding: 5px 10px;
@@ -286,6 +286,11 @@ footer {
     text-decoration: none;
     margin: 0 10px;
 }
+div img {
+    width: 80px; /* Ajusta el ancho según sea necesario */
+    height: auto; /* Mantiene la proporción de aspecto */
+}
+
 
 /* media query for smaller screens */
 @media screen and (max-width: 768px) {
