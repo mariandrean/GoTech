@@ -37,7 +37,7 @@ body, main {
     display: flex;
     justify-content:space-between;
     align-items: flex-start;
-    margin-top: 11vw;
+    margin-top: 10vw;
     justify-content:flex-start;
 }
 .imagencontacto {
@@ -100,18 +100,6 @@ button {
        entre las etiquetas y sus campos de texto */
     margin-left: 15em;
 }
-.bottom {
-    display: inline-flex;
-    padding: 0px 18px 0px 16px;
-    justify-content: center;
-    align-items: center;
-    gap: 99px;
-    background: var(--Azul, #14213D);
-}
-.socialmedialogos {
-    display: inline;
-    gap: 15px
-}
 .form {
     width: 50%;
     padding: 3em;
@@ -119,10 +107,22 @@ button {
     border-radius: 1em;
     margin-left: 3em;
 }
-/* Add a media query for smaller screens */
+.grid-layout {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    justify-content: center;
+    align-items: center;
+ 
+    background: var(--Azul, #14213D);
+}
+.socialmedialogos {
+    display: inline;
+    gap: 15px
+}
+/* media query for smaller screens */
 @media screen and (max-width: 768px) {
     .form {
-        width: 80%; /* Adjust the width for smaller screens */
+        width: 80%; /* width for smaller screens */
         margin-left: auto; /* Center the form horizontally */
         margin-right: auto;
     }
@@ -138,8 +138,8 @@ button {
     }
 
     button {
-        margin-left: 0; /* Reset margin for button */
         margin-top: 1em; /* Add some space between the fields and the button */
+        text-align:center;
     }
 }
 /* media query para ocultar al imagen de dos personas .imagencontacto en pantallas de menos de 768px */
