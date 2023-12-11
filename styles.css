@@ -97,15 +97,17 @@ textarea {
     /* Proporcionar espacio para escribir texto */
     height: 5em;
 }
+.button-container {
+    text-align:center; /* Centrar el botón dentro de este contenedor */
+}
 button {
-  
-    /* mismo tamaño que los elementos de la etiqueta */
-    /* Este margen adicional representa aproximadamente el mismo espacio que el espacio
-       entre las etiquetas y sus campos de texto */
-    margin-left: 0.5em;
-  }
-  
-  
+    margin-top: 1em;
+    display: flex;
+    width: 181px;
+    height: 70px;
+    justify-content: center;
+    align-items: center; 
+}
 .Nosotros {
     display: flex;
     flex-direction: column;
@@ -279,6 +281,7 @@ body {
         margin: 5px;
     }
 }
+
 
 footer {
     margin: 0;
