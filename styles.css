@@ -93,13 +93,6 @@ textarea {
     /* Proporcionar espacio para escribir texto */
     height: 5em;
 }
-button {
-  
-    /* mismo tamaño que los elementos de la etiqueta */
-    /* Este margen adicional representa aproximadamente el mismo espacio que el espacio
-       entre las etiquetas y sus campos de texto */
-    margin-left: 15em;
-}
 .form {
     width: 50%;
     padding: 3em;
@@ -136,11 +129,17 @@ button {
     textarea {
         width: 100%; /* Make input fields take full width */
     }
-
+    .button-container {
+        text-align:center; /* Centrar el botón dentro de este contenedor */
+        }
     button {
-        margin-top: 1em; /* Add some space between the fields and the button */
-        text-align:center;
-    }
+        margin-top: 1em;
+        display: flex;
+        width: 181px;
+        height: 70px;
+        justify-content: center;
+        align-items: center; 
+        }
 }
 /* media query para ocultar al imagen de dos personas .imagencontacto en pantallas de menos de 768px */
 @media screen and (max-width: 768px) {
