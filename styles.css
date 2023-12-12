@@ -42,27 +42,27 @@ nav{
 
 /* Inicio */
 
-.principal {
+.inicio {
     background-image: url(imagenes/fondo.jpg);
     width: 100vw;
-    height: 50vw;
+    height: 45vw;
     background-position: center 30%;
     background-size: cover;
+    padding-top: 3vw;
 }
 
-.principal h1 {
+.inicio--titulo {
     margin-top: 0;
     text-align: center;
     font-size: 7vw;
-    padding-top: 3.5%;
     font-weight: 700;
 }
 
-.principal h2 {
+.inicio--subtitulo {
     font-size: 3vw;
     font-weight: 400;
-    margin-top: 30%;
-    margin-left: 8%;
+    margin-top: 30vw;
+    margin-bottom: 8vw;
     text-align: left;
 }
 
