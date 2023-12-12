@@ -182,19 +182,19 @@ span {
     display: flex;
 }
 
-.Posicionamiento-Web figure {
+.Posicionamiento-Web .pw-figure {
     max-width: 100%;
     overflow: hidden;
     cursor: pointer;
 }
 
-.Posicionamiento-Web figure img {
+.Posicionamiento-Web .pw-figure .pw-img {
     width: 100%;
     height: 100%;
     transition: all 500ms ease-out;
 }
 
-.Posicionamiento-Web figure .capa_posicionamiento_web {
+.Posicionamiento-Web .pw-figure .capa_posicionamiento_web {
     position: absolute;
     top: 0;
     left: 0;
@@ -208,21 +208,21 @@ span {
     text-align: center;
 }
 
-.Posicionamiento-Web figure:hover > .capa_posicionamiento_web {
+.Posicionamiento-Web .pw-figure:hover > .capa_posicionamiento_web {
     opacity: 1;
     visibility: visible;
 } 
 
-.Posicionamiento-Web figure:hover > .capa_posicionamiento_web h1 {
+.Posicionamiento-Web .pw-figure:hover > .capa_posicionamiento_web .h1pw-title {
     margin-top: 70px;
     margin-bottom: 15px;
 }
 
-.Posicionamiento-Web figure:hover > img {
+.Posicionamiento-Web .pw-figure:hover > .pw-img {
     transform: scale(1.3);
 }
 
-.Posicionamiento-Web figure .capa_posicionamiento_web p {
+.Posicionamiento-Web .pw-figure .capa_posicionamiento_web .pw-p {
     color:#ffffff;
     font-size: 21px;
     line-height: 1.5;
@@ -231,7 +231,7 @@ span {
     margin: auto;
 }
 
-.Posicionamiento-Web figure .capa_posicionamiento_web h1 {
+.Posicionamiento-Web .pw-figure .capa_posicionamiento_web .h1pw-title {
     font-family: 'Jost', sans-serif;
     text-align: center;
     font-size: 40px;
