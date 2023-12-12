@@ -196,7 +196,7 @@ h3 {
     display: flex;
     justify-content:space-between;
     align-items: flex-start;
-    margin-top: 10vw;
+    margin-top: 2vw;
     justify-content:flex-start;
 }
 .imagencontacto {
@@ -206,22 +206,33 @@ h3 {
 .form {  
     /* formulario */
     width: 50%; /* ancho del formulario Te ayudamos */
-    padding: 3em;
-    border: 1px solid #ccc;
+    padding:3em;
+    border: 0.5px solid #ccc;
     border-radius: 1em;
     margin-left: 3em;
 }
+.form--titulo {
+    font-size: 3vw
+}
 
-ul {
+.form--datos {
     list-style:none;
     padding: 0;
     margin: 0;
+    text-align: center;
+    line-height: 1.5;
 }
-
+.form--datospersonales {
+    list-style:none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    line-height: 1.5;
+}
+/* selecciona todos los elementos list item (li) que siguen directamente a otro elemento li dentro de un formulario y les aplicará un margen superior de 1em, para espaciar entre elementos de lista consecutivos */
 form li + li {
     margin-top: 1em;
-}
-  
+} 
 label {
     /* Tamaño y alineación uniforme */
     display: inline-block;
