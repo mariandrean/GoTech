@@ -87,35 +87,73 @@ nav{
     color: #ffca41;
 }
 
-.Developers {
-    display: flex;
-    justify-content: space-around; /* Espacio uniforme entre elementos */
-    flex-wrap: wrap; /* Permite que los elementos se envuelvan a la siguiente línea si no caben */
-    background-color: #14213d;
+ .Developers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #14213D;
 }
 
-.Developers_GoTech {
-    text-align: center;
-    margin: 10px;
-    flex: 1; /* Hace que cada elemento tenga el mismo tamaño */
-    max-width: 300px; /* Limita el ancho máximo para evitar que se estiren demasiado */
+.foto {
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  padding: 20px;
+  max-width: 300px; /* Ajusta según tus necesidades */
 }
 
-.Developers_GoTech img {
-    width: 70%; /* Asegura que la imagen sea 100% del ancho del contenedor */
-    height: auto;
+img {
+  display: block;
+  max-width: 100px;
+  height: auto;
+  text-align: center;
 }
 
-.Developers--Funcion {
-    color: white;
-    font-size: 12px;
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  padding: 5px;
+  font-size: 12px;
+}
+
+.foto:hover .overlay {
+  opacity: 1;
+}
+
+.texto {
+  max-width: 80%; /* Ajusta según tus necesidades */
+  text-align: center;
+  margin: 0 auto;
+  z-index: 1; /* Asegura que el texto esté por encima de la imagen */
 }
 
 .Developers--nombre {
-    color: #fca311;
-    font-size: 12px;
+  margin: 10px 0;
+  color: #ffca41;
+  font-size: 14px;
+  text-align: center;
+  z-index: 2; /* Asegura que el nombre y la función estén por encima del texto */
 }
 
+.Developers--Funcion {
+    margin: 10px 0;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    z-index: 2; /* Asegura que el nombre y la función estén por encima del texto */
+  }
 /*Servicios*/
 
 .Servicios {
