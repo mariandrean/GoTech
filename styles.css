@@ -16,53 +16,56 @@ body {
     position: sticky;
     top: 0;
     width: 100%;
-    height: 80px;
+    height: min(10vw, 80px);
     background-color: #14213D;
     display: flex;
 }
 
 nav{
     width: 100%;
-    height: 80px;
+    height: min(10vw, 80px);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 20px;
+    padding: 0 50px 0 20px;
 }
 
 .logo {
-    height: 80px;
+    height: min(10vw, 80px);
 }
 
 .menu {
     text-decoration: none;
     font-family: 'Jost', sans-serif; /* Aplica la fuente Jost al menú */
-    font-size: 24px; /* Ajusta el tamaño de la letra */
+    font-size: min(3vw, 24px); /* Ajusta el tamaño de la letra */
 }
 
 /* Inicio */
 
-.principal {
+.inicio {
     background-image: url(imagenes/fondo.jpg);
-    width: 100vw;
-    height: 50vw;
+    width: 100%;
+    height: 45vw;
     background-position: center 30%;
     background-size: cover;
+    padding: 1vw 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.principal h1 {
+.inicio--titulo {
     margin-top: 0;
     text-align: center;
     font-size: 7vw;
-    padding-top: 3.5%;
     font-weight: 700;
 }
 
-.principal h2 {
+.inicio--subtitulo {
     font-size: 3vw;
     font-weight: 400;
-    margin-top: 30%;
-    margin-left: 8%;
+    margin-left: 8vw;
+    margin-bottom: 5vw;
     text-align: left;
 }
 
@@ -76,10 +79,10 @@ nav{
     padding: 20px;
 }
 
-.Nosotros h1,
-.Nosotros h2,
-.Nosotros h3,
-.Nosotros p {
+.titulo--somos,
+.titulo--caracteristicas,
+.titulo-equipo,
+.contenido--somos {
     margin-bottom: 15px;
 }
 
@@ -106,12 +109,14 @@ nav{
     height: auto;
 }
 
-.Developers_GoTech p {
+.Developers--Funcion {
     color: white;
+    font-size: 12px;
 }
 
-.Developers_GoTech h3 {
+.Developers--nombre {
     color: #fca311;
+    font-size: 12px;
 }
 
 /*Servicios*/
@@ -119,38 +124,87 @@ nav{
 .Servicios {
     display: flex;
     justify-content: space-around;
+    margin-top: 1%;
+    margin-bottom: 2%;
 }
 
 .Posicionamiento-Web {
-width: 460px;
-height: 650px;
-top: 1862px;
-left: 30px;
-border-radius: 20px;
-border: 7px solid #14213D;
+    position: relative;
+    width: 460px;
+    border-radius: 20px;
+    border: 8px solid #14213D;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 
-h1 {
+.Posicionamiento-Web .pw-figure {
+    max-width: 100%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.Posicionamiento-Web .pw-figure .pw-img {
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+}
+
+.Posicionamiento-Web .pw-figure .capa_posicionamiento_web {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(4, 69, 80, 0.9);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+
+.Posicionamiento-Web .pw-figure:hover > .capa_posicionamiento_web {
+    opacity: 1;
+    visibility: visible;
+} 
+
+.Posicionamiento-Web .pw-figure:hover > .capa_posicionamiento_web .h1pw-title {
+    margin-top: 70px;
+    margin-bottom: 15px;
+}
+
+.Posicionamiento-Web .pw-figure:hover > .pw-img {
+    transform: scale(1.3);
+}
+
+.Posicionamiento-Web .pw-figure .capa_posicionamiento_web .pw-p {
+    color:#ffffff;
+    font-size: 21px;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 220px;
+    margin: auto;
+}
+
+.Posicionamiento-Web .pw-figure .capa_posicionamiento_web .h1pw-title {
     font-family: 'Jost', sans-serif;
     text-align: center;
-    font-size: 32px;
+    font-size: 40px;
     font-weight: 800;
     line-height: 46px;
     letter-spacing: 0em;
-    color: #14213D;
-}
-
-.imagen-posicionamiento-web {
-    max-width: 100%;
+    color: #ffffff;
 }
 
 .Tienda-Online {
     width: 424px;
     height: 650px;
     top: 1862px;
-    left: 508px;
+    margin-inline-start: 1%;
+    margin-inline-end: 1%;
     border-radius: 20px;
-    border: 7px solid #14213D;
+    border: 8px solid #14213D;
 }
 
 h2 {
@@ -171,9 +225,10 @@ h2 {
     width: 460px;
     height: 650px;
     top: 1862px;
-    left: 950px;
+    margin-inline-start: 1%;
+    margin-inline-end: 1%;
     border-radius: 20px;
-    border: 7px solid #14213D;
+    border: 8px solid #14213D;
 }
 
 h3 {
@@ -284,46 +339,29 @@ button {
 /* Footer */
 
 footer {
-    margin: 0;
-    padding: 0;
-    font-family: 'Jost', sans-serif; /* Aplica la fuente Jost al cuerpo del documento */    
-}
-.pie-de-pagina {
+    position: sticky;
+    bottom: 0;
     background-color: #14213D;
-    color: #fff;
-    text-align: left;
-    padding: 5px 10px;
+    padding: 0 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: min(1.5vw, 16px);
 }
 
-.pie-de-pagina a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 10px;
+.footer--redes {
+    display: flex;
 }
-div img {
-    width: 80px; /* Ajusta el ancho según sea necesario */
+
+.footer--logo {
+    margin: 10px;
+    width: 30px; /* Ajusta el ancho según sea necesario */
     height: auto; /* Mantiene la proporción de aspecto */
 }
 
 
 /* media query for smaller screens */
 @media screen and (max-width: 768px) {
-    .encabezado {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .menu {
-        margin-top: 10px;
-    }
-
-    .menu a {
-        margin: 5px;
-    }
 
     .Nosotros {
         padding: 10px;
@@ -360,5 +398,8 @@ div img {
     /* media query para ocultar al imagen de dos personas .imagencontacto en pantallas de menos de 768px */
     .imagencontacto {
         display: none;
+    }
+    footer {
+        font-size: 11px;
     }
 }
