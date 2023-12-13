@@ -79,10 +79,10 @@ nav{
     padding: 20px;
 }
 
-.Nosotros h1,
-.Nosotros h2,
-.Nosotros h3,
-.Nosotros p {
+.titulo--somos,
+.titulo--caracteristicas,
+.titulo-equipo,
+.contenido--somos {
     margin-bottom: 15px;
 }
 
@@ -109,12 +109,14 @@ nav{
     height: auto;
 }
 
-.Developers_GoTech p {
+.Developers--Funcion {
     color: white;
+    font-size: 12px;
 }
 
-.Developers_GoTech h3 {
+.Developers--nombre {
     color: #fca311;
+    font-size: 12px;
 }
 
 /*Servicios*/
