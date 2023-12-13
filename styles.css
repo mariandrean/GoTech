@@ -39,6 +39,15 @@ nav{
     font-family: 'Jost', sans-serif; /* Aplica la fuente Jost al menú */
     font-size: min(3vw, 24px); /* Ajusta el tamaño de la letra */
 }
+/* Cambiar el color al pasar el ratón */
+.menu:hover {
+    color: #ffca41; /* Puedes cambiar esto al color que desees */
+ }
+ 
+ /* Agregar bordes al pasar el ratón */
+ .menu:hover {
+    border-bottom: 2px solid #ffca41; /* Puedes cambiar esto al color y ancho que desees */
+ }
 
 /* Inicio */
 
