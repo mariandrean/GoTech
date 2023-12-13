@@ -275,6 +275,12 @@ button {
     align-items: center; 
 }
 
+.inline {
+    width: unset;
+    display: inline;
+    vertical-align: middle;
+}
+
 /* Footer */
 
 footer {
