@@ -15,6 +15,7 @@ body {
 .encabezado {
     position: sticky;
     top: 0;
+    z-index: 1;
     width: 100%;
     height: min(10vw, 80px);
     background-color: #14213D;
@@ -333,6 +334,7 @@ button {
 footer {
     position: sticky;
     bottom: 0;
+    z-index: 1;
     background-color: #14213D;
     padding: 0 10px;
     display: flex;
