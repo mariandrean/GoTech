@@ -249,27 +249,35 @@ h3 {
 
 .contacto {
     display: flex;
-    justify-content:space-between;
-    align-items: flex-start;
-    margin-top: 2vw;
-    justify-content:flex-start;
+    justify-content:space-around;
+    align-items:center;
+    margin-top: 1.5vw;
+    margin-bottom: 1.5vw;
+    
 }
 .imagencontacto {
     width: 50%; /* ancho de la imagen de dos personas */
-    height: auto;
+    display: flex;
+    justify-content:space-around;
+    align-items: flex-start;
+    margin-top: 1.5vw;
+    margin-bottom: 1.5vw;
+    
+    
 } 
 .form {  
     /* formulario */
-    width: 50%; /* ancho del formulario Te ayudamos */
+    max-width: 400px; /* ancho del formulario Te ayudamos */
     padding:3em;
     border: 0.5px solid #ccc;
     border-radius: 1em;
-    margin-left: 3em;
+    margin-left: 0em;
+    margin-right: 0em;
+    text-align: center;
 }
 .form--titulo {
     font-size: 3vw
 }
-
 .form--datos {
     list-style:none;
     padding: 0;
@@ -284,6 +292,7 @@ h3 {
     text-align: left;
     line-height: 1.5;
 }
+
 /* selecciona todos los elementos list item (li) que siguen directamente a otro elemento li dentro de un formulario y les aplicará un margen superior de 1em, para espaciar entre elementos de lista consecutivos */
 form li + li {
     margin-top: 1em;
@@ -299,12 +308,10 @@ input, textarea {
     /* Para asegurarse de que todos los campos de texto tienen la misma configuración de letra
        Por defecto, las áreas de texto tienen un tipo de letra monoespaciada */
     font: 1em;
-  
-    /* Tamaño uniforme del campo de texto */
-    width: 250px;
+      /* Tamaño uniforme del campo de texto */
+    width: 100%;
     box-sizing: border-box;
-  
-    /* Hacer coincidir los bordes del campo del formulario */
+      /* Hacer coincidir los bordes del campo del formulario */
     border: 1px solid #999;
 }
 input:focus, textarea:focus {
@@ -317,17 +324,6 @@ textarea {
 
     /* Proporcionar espacio para escribir texto */
     height: 5em;
-}
-.button-container {
-    text-align:center; /* Centrar el botón dentro de este contenedor */
-}
-button {
-    margin-top: 1em;
-    display: flex;
-    width: 181px;
-    height: 70px;
-    justify-content: center;
-    align-items: center; 
 }
 
 .inline {
@@ -384,15 +380,6 @@ footer {
 
     .button-container {
         text-align:center; /* Centrar el botón dentro de este contenedor */
-    }
-
-    button {
-        margin-top: 1em;
-        display: flex;
-        width: 181px;
-        height: 70px;
-        justify-content: center;
-        align-items: center; 
     }
 
     /* media query para ocultar al imagen de dos personas .imagencontacto en pantallas de menos de 768px */
