@@ -320,27 +320,23 @@ button {
 /* Footer */
 
 footer {
-    margin: 0;
-    padding: 0;
-    font-family: 'Jost', sans-serif; /* Aplica la fuente Jost al cuerpo del documento */    
-}
-.pie-de-pagina {
+    position: sticky;
+    bottom: 0;
     background-color: #14213D;
-    color: #fff;
-    text-align: left;
-    padding: 5px 10px;
+    padding: 0 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: min(1.5vw, 16px);
 }
 
-.pie-de-pagina a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 10px;
+.footer--redes {
+    display: flex;
 }
-div img {
-    width: 80px; /* Ajusta el ancho según sea necesario */
+
+.footer--logo {
+    margin: 10px;
+    width: 30px; /* Ajusta el ancho según sea necesario */
     height: auto; /* Mantiene la proporción de aspecto */
 }
 
@@ -383,5 +379,8 @@ div img {
     /* media query para ocultar al imagen de dos personas .imagencontacto en pantallas de menos de 768px */
     .imagencontacto {
         display: none;
+    }
+    footer {
+        font-size: 11px;
     }
 }
