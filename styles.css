@@ -15,54 +15,67 @@ body {
 .encabezado {
     position: sticky;
     top: 0;
+    z-index: 1;
     width: 100%;
-    height: 80px;
+    height: min(10vw, 80px);
     background-color: #14213D;
     display: flex;
 }
 
 nav{
     width: 100%;
-    height: 80px;
+    height: min(10vw, 80px);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 20px;
+    padding: 0 50px 0 20px;
 }
 
 .logo {
-    height: 80px;
+    height: min(10vw, 80px);
 }
 
 .menu {
     text-decoration: none;
     font-family: 'Jost', sans-serif; /* Aplica la fuente Jost al menú */
-    font-size: 24px; /* Ajusta el tamaño de la letra */
+    font-size: min(3vw, 24px); /* Ajusta el tamaño de la letra */
 }
+/* Cambiar el color al pasar el ratón */
+.menu:hover {
+    color: #ffca41; /* Puedes cambiar esto al color que desees */
+ }
+ 
+ /* Agregar bordes al pasar el ratón */
+ .menu:hover {
+    border-bottom: 2px solid #ffca41; /* Puedes cambiar esto al color y ancho que desees */
+ }
 
 /* Inicio */
 
-.principal {
+.inicio {
     background-image: url(imagenes/fondo.jpg);
-    width: 100vw;
-    height: 50vw;
+    width: 100%;
+    height: 45vw;
     background-position: center 30%;
     background-size: cover;
+    padding: 1vw 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.principal h1 {
+.inicio--titulo {
     margin-top: 0;
     text-align: center;
     font-size: 7vw;
-    padding-top: 3.5%;
     font-weight: 700;
 }
 
-.principal h2 {
+.inicio--subtitulo {
     font-size: 3vw;
     font-weight: 400;
-    margin-top: 30%;
-    margin-left: 8%;
+    margin-left: 8vw;
+    margin-bottom: 5vw;
     text-align: left;
 }
 
@@ -76,10 +89,10 @@ nav{
     padding: 20px;
 }
 
-.Nosotros h1,
-.Nosotros h2,
-.Nosotros h3,
-.Nosotros p {
+.titulo--somos,
+.titulo--caracteristicas,
+.titulo-equipo,
+.contenido--somos {
     margin-bottom: 15px;
 }
 
@@ -87,107 +100,276 @@ nav{
     color: #ffca41;
 }
 
-.Developers {
-    display: flex;
-    justify-content: space-around; /* Espacio uniforme entre elementos */
-    flex-wrap: wrap; /* Permite que los elementos se envuelvan a la siguiente línea si no caben */
-    background-color: #14213d;
+ .Developers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #14213D;
 }
 
-.Developers_GoTech {
-    text-align: center;
-    margin: 10px;
-    flex: 1; /* Hace que cada elemento tenga el mismo tamaño */
-    max-width: 300px; /* Limita el ancho máximo para evitar que se estiren demasiado */
+.foto {
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  padding: 20px;
+  max-width: 300px; /* Ajusta según tus necesidades */
 }
 
-.Developers_GoTech img {
-    width: 70%; /* Asegura que la imagen sea 100% del ancho del contenedor */
-    height: auto;
+img {
+  display: block;
+  max-width: 100px;
+  height: auto;
+  text-align: center;
 }
 
-.Developers_GoTech p {
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  padding: 5px;
+  font-size: 12px;
+}
+
+.foto:hover .overlay {
+  opacity: 1;
+}
+
+.texto {
+  max-width: 80%; /* Ajusta según tus necesidades */
+  text-align: center;
+  margin: 0 auto;
+  z-index: 1; /* Asegura que el texto esté por encima de la imagen */
+}
+
+.Developers--nombre {
+  margin: 10px 0;
+  color: #ffca41;
+  font-size: 14px;
+  text-align: center;
+  z-index: 2; /* Asegura que el nombre y la función estén por encima del texto */
+}
+
+.Developers--Funcion {
+    margin: 10px 0;
+    font-size: 14px;
     color: white;
-}
-
-.Developers_GoTech h3 {
-    color: #fca311;
-}
-
+    text-align: center;
+    z-index: 2; /* Asegura que el nombre y la función estén por encima del texto */
+  }
 /*Servicios*/
 
 .Servicios {
     display: flex;
     justify-content: space-around;
+    margin-top: 1%;
+    margin-bottom: 2%;
 }
 
 .Posicionamiento-Web {
-width: 460px;
-height: 650px;
-top: 1862px;
-left: 30px;
-border-radius: 20px;
-border: 7px solid #14213D;
+    position: relative;
+    width: 460px;
+    border-radius: 20px;
+    border: 8px solid #14213D;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 
-h1 {
+.Posicionamiento-Web .pw-figure {
+    max-width: 100%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.Posicionamiento-Web .pw-figure .servicios-img {
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+}
+
+.Posicionamiento-Web .pw-figure .capa_posicionamiento_web {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(4, 69, 80, 0.9);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+
+.Posicionamiento-Web .pw-figure:hover > .capa_posicionamiento_web {
+    opacity: 1;
+    visibility: visible;
+} 
+
+.Posicionamiento-Web .pw-figure:hover > .capa_posicionamiento_web .servicios-title {
+    margin-top: 70px;
+    margin-bottom: 15px;
+}
+
+.Posicionamiento-Web .pw-figure:hover > .servicios-img {
+    transform: scale(1.3);
+}
+
+.Posicionamiento-Web .pw-figure .capa_posicionamiento_web .servicios-p {
+    color:#ffffff;
+    font-size: 21px;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 220px;
+    margin: auto;
+}
+
+.Posicionamiento-Web .pw-figure .capa_posicionamiento_web .servicios-title {
     font-family: 'Jost', sans-serif;
     text-align: center;
-    font-size: 32px;
+    font-size: 40px;
     font-weight: 800;
     line-height: 46px;
     letter-spacing: 0em;
-    color: #14213D;
-}
-
-.imagen-posicionamiento-web {
-    max-width: 100%;
+    color: #ffffff;
+    margin-left: 2%;
+    margin-right: 2%;
 }
 
 .Tienda-Online {
+    position: relative;
     width: 424px;
     height: 650px;
-    top: 1862px;
-    left: 508px;
     border-radius: 20px;
-    border: 7px solid #14213D;
+    border: 8px solid #14213D;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 
-h2 {
+.Tienda-Online .to-figure {
+    max-width: 100%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.Tienda-Online .to-figure .capa_tienda_online {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(4, 69, 80, 0.9);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+
+.Tienda-Online .to-figure:hover > .capa_tienda_online {
+    opacity: 1;
+    visibility: visible;
+}
+
+.Tienda-Online .to-figure:hover > .servicios-img {
+    transform: scale(1.3);
+}
+
+.Tienda-Online .to-figure .capa_tienda_online .servicios-p {
+    color: #ffffff;
+    font-size: 21px;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 220px;
+    margin: auto;
+}
+
+.Tienda-Online .to-figure .capa_tienda_online .servicios-title {
     font-family: 'Jost', sans-serif;
     text-align: center;
-    font-size: 32px;
+    font-size: 40px;
     font-weight: 800;
     line-height: 46px;
     letter-spacing: 0em;
-    color: #14213D;
+    color: #ffffff;
+    margin-top: 35%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
-.imagen-tienda-online {
-    max-width: 100%;
-}
 
 .Publicidad-Online {
+    position: relative;
     width: 460px;
     height: 650px;
-    top: 1862px;
-    left: 950px;
     border-radius: 20px;
-    border: 7px solid #14213D;
+    border: 8px solid #14213D;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 
-h3 {
+.Publicidad-Online .po-figure {
+    max-width: 100%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.Publicidad-Online .po-figure .capa_publicidad_online {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(4, 69, 80, 0.9);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+
+.Publicidad-Online .po-figure:hover > .capa_publicidad_online {
+    opacity: 1;
+    visibility: visible;
+}
+
+.Publicidad-Online .po-figure:hover > .servicios-img {
+    transform: scale(1.3);
+}
+
+.Publicidad-Online .po-figure .capa_publicidad_online .servicios-p {
+    color: #ffffff;
+    font-size: 21px;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 220px;
+    margin: auto;
+}
+
+.Publicidad-Online .po-figure .capa_publicidad_online .servicios-title {
     font-family: 'Jost', sans-serif;
     text-align: center;
-    font-size: 32px;
+    font-size: 40px;
     font-weight: 800;
     line-height: 46px;
     letter-spacing: 0em;
-    color: #14213D;
-}
-
-.imagen-publicidad-online {
-    max-width: 100%;
+    color: #ffffff;
+    margin-top: 15%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 /* Contacto */
@@ -278,46 +460,30 @@ button {
 /* Footer */
 
 footer {
-    margin: 0;
-    padding: 0;
-    font-family: 'Jost', sans-serif; /* Aplica la fuente Jost al cuerpo del documento */    
-}
-.pie-de-pagina {
+    position: sticky;
+    bottom: 0;
+    z-index: 1;
     background-color: #14213D;
-    color: #fff;
-    text-align: left;
-    padding: 5px 10px;
+    padding: 0 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: min(1.5vw, 16px);
 }
 
-.pie-de-pagina a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 10px;
+.footer--redes {
+    display: flex;
 }
-div img {
-    width: 80px; /* Ajusta el ancho según sea necesario */
+
+.footer--logo {
+    margin: 10px;
+    width: 30px; /* Ajusta el ancho según sea necesario */
     height: auto; /* Mantiene la proporción de aspecto */
 }
 
 
 /* media query for smaller screens */
 @media screen and (max-width: 768px) {
-    .encabezado {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .menu {
-        margin-top: 10px;
-    }
-
-    .menu a {
-        margin: 5px;
-    }
 
     .Nosotros {
         padding: 10px;
@@ -354,5 +520,8 @@ div img {
     /* media query para ocultar al imagen de dos personas .imagencontacto en pantallas de menos de 768px */
     .imagencontacto {
         display: none;
+    }
+    footer {
+        font-size: 11px;
     }
 }
