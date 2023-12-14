@@ -125,6 +125,7 @@ img {
   opacity: 0;
   transition: opacity 0.3s ease;
   padding: 5px;
+  transform: translateY(-130px);
   font-size: 12px;
 }
 
