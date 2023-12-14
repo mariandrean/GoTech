@@ -89,10 +89,6 @@ nav{
     padding: 20px;
 }
 
-.contenido-caracteristicas, .texto-nosotros, {
-    line-height: 0.5;
-}
-
 .titulo--somos,
 .titulo--caracteristicas,
 .titulo-equipo,
@@ -120,7 +116,7 @@ nav{
   max-width: 300px; /* Ajusta según tus necesidades */
 }
 
-.imagen_developers {
+img {
   display: block;
   max-width: 100px;
   height: auto;
@@ -142,15 +138,8 @@ nav{
   opacity: 0;
   transition: opacity 0.3s ease;
   padding: 5px;
-  transform: translateY(-130px);
   font-size: 12px;
 }
-
-.overlay .texto {
-    max-width: 80%; /* Ajusta según tus necesidades */
-    text-align: center; /* Centra el texto dentro del contenedor */
-    margin: 0 auto; /* Centra el contenedor de texto */
-  }
 
 .foto:hover .overlay {
   opacity: 1;
