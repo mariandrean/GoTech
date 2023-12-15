@@ -15,7 +15,7 @@ body {
 .encabezado {
     position: sticky;
     top: 0;
-    z-index: 1;
+    z-index: 2;
     width: 100%;
     height: min(10vw, 80px);
     background-color: #14213D;
@@ -55,7 +55,7 @@ nav{
 .inicio {
     background-image: url(imagenes/fondo.jpg);
     width: 100%;
-    height: min(80vh, 50vw);
+    height: min(85vh, 50vw);
     background-position: center 20%;
     background-size: cover;
     padding: 1vw 0;
@@ -468,7 +468,7 @@ textarea {
 footer {
     position: sticky;
     bottom: 0;
-    z-index: 1;
+    z-index: 2;
     background-color: #14213D;
     padding: 0 10px;
     display: flex;
