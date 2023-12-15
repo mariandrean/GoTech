@@ -148,66 +148,103 @@
         </figure>
       </div>
     </section>
-   <!-- empieza la página de contacto -->
-   <section id="Contacto" class="contacto">
-    <img class="imagencontacto" src="./imagenes/Imagen Contacto.png" alt="dos personas dándose la mano">
-    <div class="form">
-      <h1 class="form--titulo">Te ayudamos</h1>
-      <ul class="form--datos">
-        <li>Tel: +34 655 895 611</li>
-        <li>Email: <a href="mailto:info@gotech.com">info@gotech.com</a></li>
-      </ul>
-      <h1 class="form--titulo">Déjanos tu consulta:</h1>
-      <!--elemento contenedor específico para contener formularios-->
-      <form action="/my-handling-form-page" method="post" class="form">
-        <ul class="form--datospersonales">
-          <li class="name">
-            <label for="name" class="name--label">Nombre:</label>
-            <input class="name--input" type="text" id="name" name="user_name" />
-          </li>
-          <li class="mail">
-            <label for="mail--label" class="email">Email:</label>
-            <input class="email--input" type="email" id="mail" name="user_mail" />
-          </li>
-          <li class="tel">
-            <label class="tel--label" for="tel">Teléfono:</label>
-            <input class="tel--input" type="tel" id="tel" name="user_tel" />
-          </li>
-          <li class="msg">
-            <label class="msg--label" for="msg">Mensaje:</label>
-            <textarea class="msg--textarea" id="msg" name="user_message">Necesito ayuda para</textarea>
-          </li>           
+
+        <section id="Servicios" class="Servicios">
+            <div class="Posicionamiento-Web">
+                <figure class="pw-figure">
+                    <img src="imagenes/Imagen Posicionamiento Web.png" class="pw-img"
+                        alt="dibujo sobre posicionamiento web">
+                    <div class="capa_posicionamiento_web">
+                        <h1 class="h1pw-title">Posicionamiento Web</h1>
+                        <p class="pw-p">No necesitas más visitas, necesitas más clientes. Posicionamos tus servicios en Google para generar clientes con un alto valor comercial. ¿Crees que ya has llegado a tu tope en internet? Descubre como impulsamos el posicionamiento de nuestros clientes hasta un +150% en sus primeros meses.</p>
+                    </div>
+                </figure>
+            </div>
+
+            <div class="Tienda-Online">
+                <h2>Tienda Online</h2>
+                <figure>
+                    <img src="imagenes/Imagen Tienda Online.jpg" class="imagen-tienda-online"
+                        alt="dibujo de una tienda online">
+                    <figcaption>
+                        <p>Aumenta tus ventas. Llama a tus clientes más potenciales a tu web. Desarrollamos la mejor
+                            página web para tu negocio y nos encargamos de impulsar tu tienda online.</p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="Publicidad-Online">
+                <h3>Publicidad Online</h3>
+                <figure>
+                    <img src="imagenes/Imagen Publicidad Online.png" class="imagen-publicidad-online"
+                        alt="dibujo de un chico dentro de un móvil con un altavoz del que salen distintos logos de redes sociales">
+                    <figcaption>
+                        <p>Vende de manera inmediata. Hacemos campañas de publicidad online que multiplicarán tus ventas
+                            manteniendo una inversión óptima. Consigue más retorno con GoTech! y pega el salto que estás
+                            esperando para tu negocio.</p>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+    <!-- empieza la página de contacto -->
+    <section id="Contacto" class="contacto">
+      <img class="imagencontacto" src="./imagenes/Imagen Contacto.png" alt="dos personas dándose la mano">
+      <div class="form">
+        <h1 class="form--titulo">Te ayudamos</h1>
+        <ul class="form--datos">
+          <li>Tel: +34 655 895 611</li>
+          <li>Email: <a href="mailto:info@gotech.com">info@gotech.com</a></li>
         </ul>
-        <br>
-        <label for="privacidad">
-          <input class="inline" type="checkbox" id="privacidad" required/>Acepto la <a href="Pdf/Declaración de privacidad de GoTech.pdf" target="_blank">política de Privacidad</a>
-        </label>
-        <!--El elemento button-->
-        <div class="button-container">
-          <button type="button" class="btn btn-warning">Enviar</button>
-        </div>
-        <br>
-      </form>
-    </div>
-  </section>
-  </main>
-  <footer>
-    <p class="footer--texto blanco">© 2023 – GoTech! | Todos los derechos reservados |
-      <a class="blanco" href="Pdf/Aviso Legal y Condiciones de Uso de modelosycontratos.pdf" target="_blank">Aviso
-        Legal</a> |
-      <a class="blanco" href="Pdf/Declaración de privacidad de GoTech.pdf" target="_blank">Política de Privacidad</a> |
-      <a class="blanco" href="Pdf/Cookies y tecnología similar.pdf" target="_blank">Política de Cookies</a>
-    </p>
-    <div class="footer--redes">
-      <a href="https://www.facebook.com" target="_blank">
-        <img class="footer--logo" src="imagenes/logoFacebook.png"></a>
-      <a href="https://www.Instagram.com" target="_blank">
-        <img class="footer--logo" src="imagenes/logoInstagram.png"></a>
-      <a href="https://www.LinkedIn.com" target="_blank">
-        <img class="footer--logo" src="imagenes/logoLinkedIn.png"></a>
-      <a href="https://www.Twitter.com" target="_blank">
-        <img class="footer--logo" src="imagenes/logoTwitter.png"></a>
-    </div>
+        <h1 class="form--titulo">Déjanos tu consulta:</h1>
+        <!--elemento contenedor específico para contener formularios-->
+        <form action="/my-handling-form-page" method="post" class="form">
+          <ul class="form--datospersonales">
+            <li class="name">
+              <label for="name" class="name--label">Nombre:</label>
+              <input class="name--input" type="text" id="name" name="user_name" />
+            </li>
+            <li class="mail">
+              <label for="mail--label" class="email">Email:</label>
+              <input class="email--input" type="email" id="mail" name="user_mail" />
+            </li>
+            <li class="tel">
+              <label class="tel--label" for="tel">Teléfono:</label>
+              <input class="tel--input" type="tel" id="tel" name="user_tel" />
+            </li>
+            <li class="msg">
+              <label class="msg--label" for="msg">Mensaje:</label>
+              <textarea class="msg--textarea" id="msg" name="user_message">Necesito ayuda para</textarea>
+            </li>           
+          </ul>
+          <br>
+          <label for="privacidad">
+            <input class="inline" type="checkbox" id="privacidad" required/>Acepto la <a href="Pdf/Declaración de privacidad de GoTech.pdf" target="_blank">política de Privacidad</a>
+          </label>
+          <!--El elemento button-->
+          <div class="button-container">
+            <button type="button" class="btn btn-warning">Enviar</button>
+          </div>
+          <br>
+        </form>
+      </div>
+    </section>
+    </main>
+    <footer>
+      <p class="blanco">© 2023 – GoTech! | Todos los derechos reservados | 
+          <a class="blanco" href="Pdf/Aviso Legal y Condiciones de Uso de modelosycontratos.pdf" target="_blank">Aviso Legal</a> | 
+          <a class="blanco" href="Pdf/Declaración de privacidad de GoTech.pdf" target="_blank">Política de Privacidad</a> | 
+          <a class="blanco" href="Pdf/Cookies y tecnología similar.pdf" target="_blank">Política de Cookies</a>
+      </p>
+
+      <div class="footer--redes">
+          <a href="https://www.facebook.com" target="_blank">
+            <img class="footer--logo" src="imagenes/logoFacebook.png"></a>
+          <a href="https://www.Instagram.com" target="_blank">
+            <img class="footer--logo" src="imagenes/logoInstagram.png"></a>
+          <a href="https://www.LinkedIn.com" target="_blank">
+            <img class="footer--logo" src="imagenes/logoLinkedIn.png"></a> 
+          <a href="https://www.Twitter.com" target="_blank">
+            <img class="footer--logo" src="imagenes/logoTwitter.png"></a>   
+      </div>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>

@@ -430,7 +430,7 @@ label {
     width: 90px;
     text-align: right;
 }
-  
+ 
 input, textarea {
     /* Para asegurarse de que todos los campos de texto tienen la misma configuración de letra
        Por defecto, las áreas de texto tienen un tipo de letra monoespaciada */
