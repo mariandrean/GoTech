@@ -15,7 +15,7 @@ body {
 .encabezado {
     position: sticky;
     top: 0;
-    z-index: 1;
+    z-index: 2;
     width: 100%;
     height: min(10vw, 80px);
     background-color: #14213D;
@@ -89,6 +89,10 @@ nav{
     padding: 20px;
 }
 
+.contenido-caracteristicas, .texto-nosotros {
+    line-height: 0.5;
+}
+
 .titulo--somos,
 .titulo--caracteristicas,
 .titulo-equipo,
@@ -100,35 +104,73 @@ nav{
     color: #ffca41;
 }
 
-.Developers {
-    display: flex;
-    justify-content: space-around; /* Espacio uniforme entre elementos */
-    flex-wrap: wrap; /* Permite que los elementos se envuelvan a la siguiente línea si no caben */
-    background-color: #14213d;
+ .Developers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #14213D;
 }
 
-.Developers_GoTech {
-    text-align: center;
-    margin: 10px;
-    flex: 1; /* Hace que cada elemento tenga el mismo tamaño */
-    max-width: 300px; /* Limita el ancho máximo para evitar que se estiren demasiado */
+.foto {
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  padding: 20px;
+  max-width: 300px; /* Ajusta según tus necesidades */
 }
 
-.Developers_GoTech img {
-    width: 70%; /* Asegura que la imagen sea 100% del ancho del contenedor */
-    height: auto;
+img {
+  display: block;
+  max-width: 100px;
+  height: auto;
+  text-align: center;
 }
 
-.Developers--Funcion {
-    color: white;
-    font-size: 12px;
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  padding: 5px;
+  font-size: 12px;
+}
+
+.foto:hover .overlay {
+  opacity: 1;
+}
+
+.texto {
+  max-width: 80%; /* Ajusta según tus necesidades */
+  text-align: center;
+  margin: 0 auto;
+  z-index: 1; /* Asegura que el texto esté por encima de la imagen */
 }
 
 .Developers--nombre {
-    color: #fca311;
-    font-size: 12px;
+  margin: 10px 0;
+  color: #ffca41;
+  font-size: 14px;
+  text-align: center;
+  z-index: 2; /* Asegura que el nombre y la función estén por encima del texto */
 }
 
+.Developers--Funcion {
+    margin: 10px 0;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    z-index: 2; /* Asegura que el nombre y la función estén por encima del texto */
+  }
 /*Servicios*/
 
 .Servicios {
@@ -154,7 +196,7 @@ nav{
     cursor: pointer;
 }
 
-.Posicionamiento-Web .pw-figure .pw-img {
+.Posicionamiento-Web .pw-figure .servicios-img {
     width: 100%;
     height: 100%;
     transition: all 500ms ease-out;
@@ -179,16 +221,16 @@ nav{
     visibility: visible;
 } 
 
-.Posicionamiento-Web .pw-figure:hover > .capa_posicionamiento_web .h1pw-title {
+.Posicionamiento-Web .pw-figure:hover > .capa_posicionamiento_web .servicios-title {
     margin-top: 70px;
     margin-bottom: 15px;
 }
 
-.Posicionamiento-Web .pw-figure:hover > .pw-img {
+.Posicionamiento-Web .pw-figure:hover > .servicios-img {
     transform: scale(1.3);
 }
 
-.Posicionamiento-Web .pw-figure .capa_posicionamiento_web .pw-p {
+.Posicionamiento-Web .pw-figure .capa_posicionamiento_web .servicios-p {
     color:#ffffff;
     font-size: 21px;
     line-height: 1.5;
@@ -197,7 +239,7 @@ nav{
     margin: auto;
 }
 
-.Posicionamiento-Web .pw-figure .capa_posicionamiento_web .h1pw-title {
+.Posicionamiento-Web .pw-figure .capa_posicionamiento_web .servicios-title {
     font-family: 'Jost', sans-serif;
     text-align: center;
     font-size: 40px;
@@ -205,88 +247,187 @@ nav{
     line-height: 46px;
     letter-spacing: 0em;
     color: #ffffff;
+    margin-left: 2%;
+    margin-right: 2%;
 }
 
 .Tienda-Online {
+    position: relative;
     width: 424px;
     height: 650px;
-    top: 1862px;
-    margin-inline-start: 1%;
-    margin-inline-end: 1%;
     border-radius: 20px;
     border: 8px solid #14213D;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 
-h2 {
+.Tienda-Online .to-figure {
+    max-width: 100%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.Tienda-Online .to-figure .capa_tienda_online {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(4, 69, 80, 0.9);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+
+.Tienda-Online .to-figure:hover > .capa_tienda_online {
+    opacity: 1;
+    visibility: visible;
+}
+
+.Tienda-Online .to-figure:hover > .servicios-img {
+    transform: scale(1.3);
+}
+
+.Tienda-Online .to-figure .capa_tienda_online .servicios-p {
+    color: #ffffff;
+    font-size: 21px;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 220px;
+    margin: auto;
+}
+
+.Tienda-Online .to-figure .capa_tienda_online .servicios-title {
     font-family: 'Jost', sans-serif;
     text-align: center;
-    font-size: 32px;
+    font-size: 40px;
     font-weight: 800;
     line-height: 46px;
     letter-spacing: 0em;
-    color: #14213D;
+    color: #ffffff;
+    margin-top: 35%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
-.imagen-tienda-online {
-    max-width: 100%;
-}
 
 .Publicidad-Online {
+    position: relative;
     width: 460px;
     height: 650px;
-    top: 1862px;
-    margin-inline-start: 1%;
-    margin-inline-end: 1%;
     border-radius: 20px;
     border: 8px solid #14213D;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 
-h3 {
+.Publicidad-Online .po-figure {
+    max-width: 100%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.Publicidad-Online .po-figure .capa_publicidad_online {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(4, 69, 80, 0.9);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+
+.Publicidad-Online .po-figure:hover > .capa_publicidad_online {
+    opacity: 1;
+    visibility: visible;
+}
+
+.Publicidad-Online .po-figure:hover > .servicios-img {
+    transform: scale(1.3);
+}
+
+.Publicidad-Online .po-figure .capa_publicidad_online .servicios-p {
+    color: #ffffff;
+    font-size: 21px;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 220px;
+    margin: auto;
+}
+
+.Publicidad-Online .po-figure .capa_publicidad_online .servicios-title {
     font-family: 'Jost', sans-serif;
     text-align: center;
-    font-size: 32px;
+    font-size: 40px;
     font-weight: 800;
     line-height: 46px;
     letter-spacing: 0em;
-    color: #14213D;
-}
-
-.imagen-publicidad-online {
-    max-width: 100%;
+    color: #ffffff;
+    margin-top: 15%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 /* Contacto */
 
 .contacto {
     display: flex;
-    justify-content:space-between;
-    align-items: flex-start;
-    margin-top: 10vw;
-    justify-content:flex-start;
+    justify-content:space-around;
+    align-items:center;
+    margin-top: 1.5vw;
+    margin-bottom: 1.5vw;
+    
 }
 .imagencontacto {
     width: 50%; /* ancho de la imagen de dos personas */
-    height: auto;
+    display: flex;
+    justify-content:space-around;
+    align-items: flex-start;
+    margin-top: 1.5vw;
+    margin-bottom: 1.5vw;
+    
+    
 } 
 .form {  
     /* formulario */
-    width: 50%; /* ancho del formulario Te ayudamos */
-    padding: 3em;
-    border: 1px solid #ccc;
+    max-width: 400px; /* ancho del formulario Te ayudamos */
+    padding:3em;
+    border: 0.5px solid #ccc;
     border-radius: 1em;
-    margin-left: 3em;
+    margin-left: 0em;
+    margin-right: 0em;
+    text-align: center;
 }
-
-ul {
+.form--titulo {
+    font-size: 3vw
+}
+.form--datos {
     list-style:none;
     padding: 0;
     margin: 0;
+    text-align: center;
+    line-height: 1.5;
+}
+.form--datospersonales {
+    list-style:none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    line-height: 1.5;
 }
 
+/* selecciona todos los elementos list item (li) que siguen directamente a otro elemento li dentro de un formulario y les aplicará un margen superior de 1em, para espaciar entre elementos de lista consecutivos */
 form li + li {
     margin-top: 1em;
-}
-  
+} 
 label {
     /* Tamaño y alineación uniforme */
     display: inline-block;
@@ -298,12 +439,10 @@ input, textarea {
     /* Para asegurarse de que todos los campos de texto tienen la misma configuración de letra
        Por defecto, las áreas de texto tienen un tipo de letra monoespaciada */
     font: 1em;
-  
-    /* Tamaño uniforme del campo de texto */
-    width: 250px;
+      /* Tamaño uniforme del campo de texto */
+    width: 100%;
     box-sizing: border-box;
-  
-    /* Hacer coincidir los bordes del campo del formulario */
+      /* Hacer coincidir los bordes del campo del formulario */
     border: 1px solid #999;
 }
 input:focus, textarea:focus {
@@ -317,16 +456,11 @@ textarea {
     /* Proporcionar espacio para escribir texto */
     height: 5em;
 }
-.button-container {
-    text-align:center; /* Centrar el botón dentro de este contenedor */
-}
-button {
-    margin-top: 1em;
-    display: flex;
-    width: 181px;
-    height: 70px;
-    justify-content: center;
-    align-items: center; 
+
+.inline {
+    width: unset;
+    display: inline;
+    vertical-align: middle;
 }
 
 /* Footer */
@@ -334,7 +468,7 @@ button {
 footer {
     position: sticky;
     bottom: 0;
-    z-index: 1;
+    z-index: 2;
     background-color: #14213D;
     padding: 0 10px;
     display: flex;
@@ -378,15 +512,6 @@ footer {
 
     .button-container {
         text-align:center; /* Centrar el botón dentro de este contenedor */
-    }
-
-    button {
-        margin-top: 1em;
-        display: flex;
-        width: 181px;
-        height: 70px;
-        justify-content: center;
-        align-items: center; 
     }
 
     /* media query para ocultar al imagen de dos personas .imagencontacto en pantallas de menos de 768px */
