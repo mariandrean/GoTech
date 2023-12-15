@@ -55,7 +55,7 @@ nav{
 .inicio {
     background-image: url(imagenes/fondo.jpg);
     width: 100%;
-    height: min(80vh, 50vw);
+    height: min(85vh, 50vw);
     background-position: center 20%;
     background-size: cover;
     padding: 1vw 0;
