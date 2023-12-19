@@ -30,6 +30,7 @@ Este proyecto contiene el código HTML y CSS para el sitio web de GoTech! Consul
 
 - Bootstrap: Se utiliza la versión 5.3.2 de Bootstrap para estilos y componentes. [Sitio web de Bootstrap](https://getbootstrap.com/)
 - BEM
+
 © 2023 – GoTech! | Todos los derechos reservados
 
 
