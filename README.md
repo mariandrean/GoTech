@@ -8,7 +8,6 @@ Este es el código fuente de la página web de GoTech! Consultoría Tecnológica
 - [Estructura del Proyecto](#estructura-del-proyecto)
 - [Cómo Usar](#cómo-usar)
 - [Recursos Externos](#recursos-externos)
-- [Licencia](#licencia)
 
 ## Descripción
 
@@ -30,7 +29,7 @@ Este proyecto contiene el código HTML y CSS para el sitio web de GoTech! Consul
 ## Recursos Externos
 
 - Bootstrap: Se utiliza la versión 5.3.2 de Bootstrap para estilos y componentes. [Sitio web de Bootstrap](https://getbootstrap.com/)
--BEM
+- BEM
 © 2023 – GoTech! | Todos los derechos reservados
 
 
