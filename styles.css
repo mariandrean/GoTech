@@ -190,6 +190,10 @@ nav{
     max-width: 100%;
     overflow: hidden;
     cursor: pointer;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .servicios--contenedor .servicios-img {
@@ -454,6 +458,17 @@ footer {
     .Nosotros {
         padding: 10px;
     }
+
+    .Servicios {
+        display: flex;
+        flex-direction: column; /* Cambia la dirección a columna en pantallas pequeñas */
+        width: 350px;
+        height: 1400px;
+      }
+      
+    .servicios--contenedor {
+        padding: 0.5px;
+      }
 
     .form {
         width: 80%; /* width for smaller screens */
