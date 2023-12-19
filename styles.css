@@ -118,7 +118,7 @@ nav{
   max-width: 300px; /* Ajusta según tus necesidades */
 }
 
-img {
+.nosotros--foto {
   display: block;
   max-width: 100px;
   height: auto;
