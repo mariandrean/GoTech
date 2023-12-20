@@ -12,11 +12,11 @@
 </head>
 
 <body>
-  <header class="encabezado">
+  <header class="encabezado shadow">
     <nav>
       <img class="logo" src="./imagenes/Logo.png" alt="Logo de GoTech! Consultoria Tecnologica">
       <a class="menu blanco" href="index.html">Inicio</a>
-      <a class="menu blanco" href="#Nosotros">Nosotros</a>
+      <a class="menu blanco" href="#inicio--final">Nosotros</a>
       <a class="menu blanco" href="#Servicios">Servicios</a>
       <a class="menu blanco" href="#Contacto">Contacto</a>
     </nav>
@@ -24,15 +24,15 @@
   <main>
     <section class="inicio">
       <h1 class="inicio--titulo blanco">Consultoría Tecnológica</h1>
-      <h2 class="inicio--subtitulo blanco">Tu socio de diseño web</h2>
+      <h2 class="inicio--subtitulo blanco" id="inicio--final">Tu socio de diseño web</h2>
     </section>
 
     <section id="Nosotros" class="Nosotros">
-      <h1 class="gotech">Somos Go<span class="amarillo">Tech</span></h1>
+      <h1 class="gotech">Somos <span class="amarillo">Go</span>Tech!</h1>
       <div class="texto-nosotros">
-      <p>Mision: Nuestra misión es proporcionar soluciones tecnológicas innovadoras que impulsen el éxito de nuestros clientes.</p>
-      <p>Vision: Aspiramos a ser líderes reconocidos en la consultoría tecnológica, creando un impacto positivo en la forma en que las empresas utilizan la tecnología.</p>
-      <p>Valores: Integridad, Innovación, Colaboración, Excelencia.</p>
+      <p>Nuestra misión es proporcionar soluciones tecnológicas innovadoras que impulsen el éxito de nuestros clientes.</p>
+      <p>Aspiramos a ser líderes reconocidos en la consultoría tecnológica, creando un impacto positivo en la forma en que las empresas utilizan la tecnología.</p>
+      <p>Nuestros valores: Integridad, Innovación, Colaboración, Excelencia.</p>
     </div>
       <h1 class="titulo--caracteristicas">Características</h1>
       <div class="contenido-caracteristicas">
@@ -82,7 +82,7 @@
             <img src="imagenes/Img Elena.png" class="nosotros--foto" alt="perfil del desarrollador web">
             <h3 class="Developers--nombre">Elena Lopez</h3>
             <p class="Developers--Funcion">Desarrolladora Web</p>
-            <p class="Developers--Funcion">Seguridad</p>
+            <p class="Developers--Funcion">Ciberseguridad</p>
           </div>
         </div>
 
@@ -103,7 +103,7 @@
         <div class="foto">
           <div class="Developers_GoTech">
             <div class="overlay">
-              <p class="texto"><p class="texto">conocimiento sólido tanto en el desarrollo del front-end como del back-end, así como habilidades para colaborar en un entorno de equipo y adaptarse a nuevas tecnologías.</p>
+              <p class="texto"><p class="texto">Conocimiento sólido tanto en el desarrollo del front-end como del back-end, así como habilidades para colaborar en un entorno de equipo y adaptarse a nuevas tecnologías.</p>
             </div>
             <img src="imagenes/Img Jessica.png" class="nosotros--foto" alt="perfil del desarrollador web">
             <h3 class="Developers--nombre">Jessica Noguera</h3>
@@ -115,41 +115,46 @@
       </div>
     </section>
 
-    <section class="Servicios" id="Servicios">
+    <section id="Servicios">
+      <h2 class="seccion--titulo amarillo">Servicios que ofrecemos</h2>
+      <div class="servicios--div">
       <div class="servicios--contenedor">
-          <img src="imagenes/Imagen Posicionamiento Web.png" class="servicios-img" alt="dibujo sobre posicionamiento web">
-          <div class="capa_posicionamiento_web">
-            <h4 class="servicios-title">Posicionamiento Web</h4>
-            <p class="servicios-p">No necesitas más visitas, necesitas más clientes. Posicionamos tus servicios en Google para generar clientes con un alto valor comercial. ¿Crees que ya has llegado a tu tope en internet? Descubre como impulsamos el posicionamiento de nuestros clientes hasta un +150% en sus primeros meses.</p>
+          <img src="imagenes/Imagen Posicionamiento Web.png" class="servicios--img" alt="dibujo sobre posicionamiento web">
+          <div class="servicios--capa">
+            <h5 class="servicios--title">Posicionamiento Web</h5>
+            <p class="servicios--p">Posicionamos tus servicios en Google para generar clientes con un alto valor comercial. Descubre como impulsamos el posicionamiento de nuestros clientes hasta un +150% en sus primeros meses.</p>
           </div>
       </div>
       <div class="servicios--contenedor">
-          <img src="imagenes/Imagen Tienda Online.jpg" class="servicios-img" alt="dibujo de una tienda online">
-          <div class="capa_tienda_online">
-            <h5 class="servicios-title">Tienda Online</h5>
-            <p class="servicios-p">Aumenta tus ventas. Llama a tus clientes más potenciales a tu web. Desarrollamos la mejor
-              página web para tu negocio y nos encargamos de impulsar tu tienda online.</p>
+          <img src="imagenes/Imagen Tienda Online.jpg" class="servicios--img" alt="dibujo de una tienda online">
+          <div class="servicios--capa">
+            <h5 class="servicios--title">Tienda Online</h5>
+            <p class="servicios--p">Aumenta tus ventas. Llama a tus clientes más potenciales a tu web. <br>
+            Desarrollamos la mejor página web para tu negocio y nos encargamos de impulsar tu tienda online.</p>
           </div>
       </div>
       <div class="servicios--contenedor">
-          <img src="imagenes/Imagen Publicidad Online.png" class="servicios-img"
+          <img src="imagenes/Imagen Publicidad Online.png" class="servicios--img"
             alt="dibujo de un chico dentro de un móvil con un altavoz del que salen distintos logos de redes sociales">
-            <div class="capa_publicidad_online">
-            <h6 class="servicios-title">Publicidad Online</h6>
-            <p class="servicios-p">Vende de manera inmediata. Hacemos campañas de publicidad online que multiplicarán tus ventas manteniendo una inversión óptima. Consigue más retorno con GoTech! y pega el salto que estás esperando para tu negocio.</p>
+            <div class="servicios--capa">
+            <h5 class="servicios--title">Publicidad Online</h5>
+            <p class="servicios--p">Vende de manera inmediata. Hacemos campañas de publicidad online que multiplicarán tus ventas manteniendo una inversión óptima. Pega el salto que estás esperando para tu negocio.</p>
             </div>
       </div>
+    </div>
     </section>
    <!-- empieza la página de contacto -->
-   <section id="Contacto" class="contacto">
+   <section id="Contacto">
+    <h2 class="seccion--titulo amarillo">Contáctanos</h2>
+    <div class="contacto--div">
     <img class="imagencontacto" src="./imagenes/Imagen Contacto.png" alt="dos personas dándose la mano">
     <div class="form">
-      <h1 class="form--titulo">Te ayudamos</h1>
+      <h3 class="form--titulo">Te ayudamos</h3>
       <ul class="form--datos">
         <li>Tel: +34 655 895 611</li>
         <li>Email: <a href="mailto:info@gotech.com">info@gotech.com</a></li>
       </ul>
-      <h1 class="form--titulo">Déjanos tu consulta:</h1>
+      <h3 class="form--titulo">Déjanos tu consulta:</h3>
       <!--elemento contenedor específico para contener formularios-->
       <form action="/my-handling-form-page" method="post" class="form">
         <ul class="form--datospersonales">
@@ -167,7 +172,7 @@
           </li>
           <li class="msg">
             <label class="msg--label" for="msg">Mensaje:</label>
-            <textarea class="msg--textarea" id="msg" name="user_message">Necesito ayuda para</textarea>
+            <textarea class="msg--textarea" id="msg" name="user_message"></textarea>
           </li>           
         </ul>
         <br>
@@ -183,7 +188,7 @@
     </div>
   </section>
   </main>
-  <footer>
+  <footer class="shadow-lg">
     <p class="footer--texto blanco">© 2023 – GoTech! | Todos los derechos reservados |
       <a class="blanco" href="Pdf/Aviso Legal y Condiciones de Uso de modelosycontratos.pdf" target="_blank">Aviso
         Legal</a> |
