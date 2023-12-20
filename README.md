@@ -14,7 +14,7 @@ Este es el código fuente de la página web de GoTech! Consultoría Tecnológica
 Este proyecto contiene el código HTML y CSS para el sitio web de GoTech! Consultoría Tecnológica. La página web tiene secciones como Inicio, Nosotros, Servicios y Contacto.
 
 
-## Estructura del Proyecto
+## Estructura
 
 - `index.html`: El archivo principal que define la estructura de la página web.
 - `styles.css`: El archivo de estilo que contiene la apariencia y diseño de la página.
@@ -29,9 +29,7 @@ Este proyecto contiene el código HTML y CSS para el sitio web de GoTech! Consul
 ## Recursos Externos
 
 - Bootstrap: Se utiliza la versión 5.3.2 de Bootstrap para estilos y componentes. [Sitio web de Bootstrap](https://getbootstrap.com/)
-- BEM
-
-© 2023 – GoTech! | Todos los derechos reservados
+- Google Fonts
 
 
 
