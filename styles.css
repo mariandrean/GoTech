@@ -10,6 +10,17 @@ body {
     color: #ffffff;
 }
 
+.amarillo {
+    color: #ffca41;
+}
+
+.seccion--titulo {
+    text-align: center;
+    margin: 30px 0 40px;
+    font-weight: 800;
+    font-size: 32px;
+}
+
 /* Header */
 
 .encabezado {
@@ -22,7 +33,7 @@ body {
     display: flex;
 }
 
-nav{
+nav {
     width: 100%;
     height: min(10vw, 80px);
     display: flex;
@@ -37,18 +48,21 @@ nav{
 
 .menu {
     text-decoration: none;
-    font-family: 'Jost', sans-serif; /* Aplica la fuente Jost al menú */
-    font-size: min(3vw, 24px); /* Ajusta el tamaño de la letra */
+    font-size: min(3vw, 24px);
+    /* Ajusta el tamaño de la letra */
 }
+
 /* Cambiar el color al pasar el ratón */
 .menu:hover {
-    color: #ffca41; /* Puedes cambiar esto al color que desees */
- }
- 
- /* Agregar bordes al pasar el ratón */
- .menu:hover {
-    border-bottom: 2px solid #ffca41; /* Puedes cambiar esto al color y ancho que desees */
- }
+    color: #ffca41;
+    /* Puedes cambiar esto al color que desees */
+}
+
+/* Agregar bordes al pasar el ratón */
+.menu:hover {
+    border-bottom: 2px solid #ffca41;
+    /* Puedes cambiar esto al color y ancho que desees */
+}
 
 /* Inicio */
 
@@ -98,68 +112,68 @@ nav{
     font-weight: bold;
 }
 
-.amarillo {
-    color: #ffca41;
-}
-
- .Developers {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  background-color: #14213D;
+.Developers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #14213D;
 }
 
 .foto {
-  position: relative;
-  overflow: hidden;
-  margin: 10px;
-  padding: 20px;
-  max-width: 300px; /* Ajusta según tus necesidades */
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+    padding: 20px;
+    max-width: 300px;
+    /* Ajusta según tus necesidades */
 }
 
 .nosotros--foto {
-  display: block;
-  max-width: 150px;
-  height: auto;
-  text-align: center;
+    display: block;
+    max-width: 150px;
+    height: auto;
+    text-align: center;
 }
 
 .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: black;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  padding: 5px;
-  font-size: 12px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    padding: 5px;
+    font-size: 12px;
 }
 
 .foto:hover .overlay {
-  opacity: 1;
+    opacity: 1;
 }
 
 .texto {
-  max-width: 80%; /* Ajusta según tus necesidades */
-  text-align: center;
-  margin: 0 auto;
-  z-index: 1; /* Asegura que el texto esté por encima de la imagen */
+    max-width: 80%;
+    /* Ajusta según tus necesidades */
+    text-align: center;
+    margin: 0 auto;
+    z-index: 1;
+    /* Asegura que el texto esté por encima de la imagen */
 }
 
 .Developers--nombre {
-  margin: 10px 0;
-  color: #ffca41;
-  font-size: 14px;
-  text-align: center;
-  z-index: 2; /* Asegura que el nombre y la función estén por encima del texto */
+    margin: 10px 0;
+    color: #ffca41;
+    font-size: 14px;
+    text-align: center;
+    z-index: 2;
+    /* Asegura que el nombre y la función estén por encima del texto */
 }
 
 .Developers--Funcion {
@@ -167,16 +181,11 @@ nav{
     font-size: 14px;
     color: white;
     text-align: center;
-    z-index: 2; /* Asegura que el nombre y la función estén por encima del texto */
-  }
-/*Servicios*/
-
-.seccion--titulo {
-    text-align: center;
-    margin: 30px 0 40px;
-    font-weight: 800;
-    font-size: 32px;
+    z-index: 2;
+    /* Asegura que el nombre y la función estén por encima del texto */
 }
+
+/*Servicios*/
 
 .servicios--div {
     display: flex;
@@ -217,17 +226,17 @@ nav{
     justify-content: center;
 }
 
-.servicios--contenedor:hover > .servicios--capa {
+.servicios--contenedor:hover>.servicios--capa {
     opacity: 1;
     visibility: visible;
-} 
+}
 
-.servicios--contenedor:hover > .servicios--title {
+.servicios--contenedor:hover>.servicios--title {
     margin-top: 70px;
     margin-bottom: 15px;
 }
 
-.servicios--contenedor:hover > .servicios--img {
+.servicios--contenedor:hover>.servicios--img {
     transform: scale(1.3);
 }
 
@@ -250,59 +259,70 @@ nav{
 
 .contacto--div {
     display: flex;
-    justify-content:space-around;
-    align-items:center;
+    justify-content: space-around;
+    align-items: center;
 }
+
 .imagencontacto {
-    width: 50%; /* ancho de la imagen de dos personas */
-} 
-.form {  
+    width: 50%;
+    /* ancho de la imagen de dos personas */
+}
+
+.form {
     /* formulario */
-    padding:3em;
+    padding: 3em;
     border: 0.5px solid #ccc;
     border-radius: 1em;
     margin-left: 0em;
     margin-right: 0em;
     text-align: center;
 }
+
 .form--titulo {
     font-size: 24px;
     text-align: center;
 }
+
 .form--datos {
-    list-style:none;
+    list-style: none;
     text-align: center;
 }
+
 .form--datospersonales {
-    list-style:none;
+    list-style: none;
     padding: 0;
     margin: 0;
     text-align: left;
 }
 
 /* selecciona todos los elementos list item (li) que siguen directamente a otro elemento li dentro de un formulario y les aplicará un margen superior de 1em, para espaciar entre elementos de lista consecutivos */
-form li + li {
+form li+li {
     margin-top: 10px;
-} 
+}
+
 label {
     /* Tamaño y alineación uniforme */
     display: inline-block;
 }
-  
-input, textarea {
+
+input,
+textarea {
     /* Para asegurarse de que todos los campos de texto tienen la misma configuración de letra
        Por defecto, las áreas de texto tienen un tipo de letra monoespaciada */
     font: 1em;
-      /* Tamaño uniforme del campo de texto */
+    /* Tamaño uniforme del campo de texto */
     width: 100%;
     box-sizing: border-box;
-      /* Hacer coincidir los bordes del campo del formulario */
+    /* Hacer coincidir los bordes del campo del formulario */
     border: 1px solid #999;
 }
-input:focus, textarea:focus {
+
+input:focus,
+textarea:focus {
     /* Destacado adicional para elementos que tienen el cursor */
     border-color: #000;
 }
+
 textarea {
     /* Alinear los campos de texto multilínea con sus etiquetas */
     vertical-align: top;
@@ -341,8 +361,9 @@ footer {
 
 .footer--logo {
     margin: 10px;
-    width: min(2.5vw, 30px); 
-    height: auto; /* Mantiene la proporción de aspecto */
+    width: min(2.5vw, 30px);
+    height: auto;
+    /* Mantiene la proporción de aspecto */
 }
 
 /* media query for smaller screens */
@@ -354,13 +375,14 @@ footer {
 
     .servicios--div {
         display: flex;
-        flex-direction: column; /* Cambia la dirección a columna en pantallas pequeñas */
+        flex-direction: column;
+        /* Cambia la dirección a columna en pantallas pequeñas */
         height: 800px;
     }
-      
+
     .servicios--contenedor {
         width: unset;
-      }
+    }
 
     .contacto--div {
         width: 100%;
@@ -368,17 +390,21 @@ footer {
 
     .form {
         width: 100%;
-        margin-left: auto; /* Center the form horizontally */
+        margin-left: auto;
+        /* Center the form horizontally */
         margin-right: auto;
     }
 
     label {
-        width: auto; /* Allow labels to take full width on smaller screens */
-        text-align: left; /* Adjust label alignment */
+        width: auto;
+        /* Allow labels to take full width on smaller screens */
+        text-align: left;
+        /* Adjust label alignment */
     }
 
     .button-container {
-        text-align:center; /* Centrar el botón dentro de este contenedor */
+        text-align: center;
+        /* Centrar el botón dentro de este contenedor */
     }
 
     /* media query para ocultar al imagen de dos personas .imagencontacto en pantallas de menos de 768px */
@@ -403,6 +429,7 @@ footer {
     .footer--logo {
         width: 20px;
     }
+
     .inicio--subtitulo {
         margin-bottom: 8%;
     }
